@@ -1,0 +1,759 @@
+/* Start General Style */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /* font-family: "Roboto", sans-serif; */
+}
+.clear-fix{
+    clear: both;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: white; 
+    font-size: 16px;
+    font-weight: 300;
+}
+.logo a{
+    font-size: 24px;
+    font-weight: 800;
+    color:#ff305b;
+    text-decoration: underline;
+    transition: text-decoration 0.4s ease-in-out;
+    font-family: "Roboto", sans-serif; 
+    cursor: pointer;
+}
+.nav .logo a:hover{
+    text-decoration: none;   
+}
+p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(104, 104, 104);
+}
+/* End General Style */
+/* Start Landing */
+/* Start Navbar */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.57);
+    overflow:hidden ;
+    padding:20px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.nav .logo{
+    float: left;
+    padding-left: 120px;
+}
+.nav .logo img{
+    width: 50%;
+}
+.nav .nav-link{
+    float: right;
+    width: 46%;
+}
+.nav .nav-link .active a{
+    color:#ff305b;
+}
+.nav .nav-link a{
+    padding: 20px 0;
+}
+.nav .nav-link li{
+    float: left;
+    padding: 0px 10px;
+}
+.nav .nav-link li a{
+    transition: color 0.4s ease-in-out ;
+    font-family: "Roboto", sans-serif;
+}
+.nav .nav-link li:hover a,
+.nav .nav-link li.active a{
+    color: rgb(255, 48, 91);
+}
+/* End Navbar */
+.land{
+    background-image: url(images/hero\ img.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.land .land-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.land .land-layer .context{
+    color: #fff;
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    position: relative;
+    top: 38%;
+}
+.land .land-layer .context h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.land .land-layer .context h1{
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0 0 10px;
+    line-height: 77px;
+    color:#ff305b;
+}
+.land .land-layer .context .typewriter{
+    display: inline-block;
+}
+.land .land-layer .context h4{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: #fff;
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    animation: typing 2.5s steps(30, end), blink-caret 1.5s linear;
+}
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+/* End Landing */
+/* start about */
+.about{
+    padding: 90px 0;
+    overflow: hidden;
+}
+.about .about-img{
+    float: left;
+    position: relative;
+    width: fit-content;
+    left: 15%;
+
+}
+.about .about-img .layer{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.57);
+    bottom: -25px;
+    left: 25px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.about .about-img:hover .layer{
+    height: 100%;
+}
+.about .about-img img{
+    position: relative;
+    left: 25px;
+    top: 25px;
+    border-radius: 5px;
+}
+.about .about-img::before{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border: 10px solid #555555;
+    border-radius: 5px ;
+
+}
+.about .about-text{
+    float: right;
+    width: 50%;
+    padding-top: 7px;
+}
+.about .about-text h2{
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+
+}
+.about .about-text h2::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    left: 0;
+    background-color: #ff305b;
+}
+.about .about-text p{
+    line-height:1.552;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    padding-right: 60px;
+    font-family: "Roboto", sans-serif;
+    color: #333333;
+}
+.about .about-text .my-information span{
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.about .about-text .my-information ul.first{
+    float: left;
+    margin-right: 70px;
+}
+.about .about-text .my-information li{
+    color: #555555;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+
+}
+.about .about-text .buttons .download i,.about .about-text .buttons .hire i{
+margin-left: 5px;
+}
+.about .about-text .buttons .download ,.about .about-text .buttons .hire{
+border-radius: 4px;
+color: #ffffff;
+display: inline-block;
+margin-right: 10px;
+padding: 13px 24px;
+background: #ff305b ;
+cursor:pointer;
+font-family: "Roboto", sans-serif;
+transition: background 0.4s ease-in-out ;
+}
+.about .about-text .buttons .download:hover ,.about .about-text .buttons .hire:hover{
+    background: #EC2403 ;
+}
+/* end about  */
+
+/* Start Services Page */
+.sercives{
+    padding: 80px 0 34px;
+    background: #f1f1f1;
+}
+.sercives .content h2,
+.portfolio .content h2,
+.testimonial-page .content h2,
+.blog .content h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    position: relative;
+    padding: 0 0 30px;
+    margin: 0 0 40px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.sercives .content h2::before,
+.portfolio .content h2::before,
+.testimonial-page .content h2::before,
+.blog .content h2::before{
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 1px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 48, 91);
+}
+.sercives .content h2::after,
+.portfolio .content h2::after,
+.testimonial-page .content h2::after,
+.blog .content h2::after{
+    content: "";
+    position: absolute;
+    width: 5.5%;
+    height: 10px;
+    border-top: 1px solid rgb(255, 48, 91);
+    border-bottom: 1px solid rgb(255, 48, 91);
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sercives .content .service{
+    overflow: hidden;
+    text-align: center;
+    padding: 0 15px;
+}
+.sercives .content .service .box{
+    float: left;
+    width: calc(25% - 30px);
+    padding: 40px 15px;
+    transition: background-color 0.3s 0s ease-in-out ;
+    border-radius: 4px;
+}
+.sercives .content .service .box h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(51,51,51);
+    line-height: 26px;
+    margin: 0 0 15px;
+}
+.sercives .content .service .box .icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.sercives .content .service .box i{
+    color: rgb(255, 48, 91);
+    font-size: 30px;
+    margin: 0 0 20px;
+    position: relative;
+    transition: transform 0.3s 0s ease-in-out;
+}
+.sercives .content .service .box:hover i{
+    transform: scale(1.2);
+}
+.sercives .content .service .box:hover{
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+/* End Services Page */
+
+/* Start Porfolio Page */
+.portfolio,.testimonial-page{
+    padding: 100px 0 70px;
+}
+.portfolio .content{
+    text-align: center;
+}
+
+.portfolio .content ul{
+    margin:0 0 50px;
+}
+.portfolio .content ul li {
+    display: inline-block;
+    padding-left: 10px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 12px;
+    font-family: "Roboto", sans-serif; 
+    cursor: pointer;
+}
+.portfolio .content ul li.active{
+    color: rgb(255,48,91);
+}
+.portfolio .content .photos {
+    overflow: hidden;
+}
+.portfolio .content .photos .upper-photos,
+.portfolio .content .photos .lower-photos{
+    padding: 0 50px;
+}
+.portfolio .content .photos .upper-photos .box,
+.portfolio .content .photos .lower-photos .box{
+    float: left;
+    padding: 0 15px 15px;
+    width: calc((100% / 3) - 30px);
+}
+.portfolio .content .photos .upper-photos .box img,
+.portfolio .content .photos .lower-photos .box img{
+    width: 100%;
+    position: relative;
+}
+.portfolio .content .photos .box{
+    position: relative;
+}
+.portfolio .content .photos .box .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s 0s linear;
+    width: calc(100% - 30px);
+    height: calc(100% - 20px);
+}
+.portfolio .content .photos .box:hover .layer{
+    opacity: 1;
+}
+.portfolio .content .photos .box .layer i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: rgb(255, 48, 91);
+    opacity: 0;
+    transition: opacity 0.3s 0s linear;
+
+}
+.portfolio .content .photos .box:hover .layer i{
+    opacity: 1;
+}
+/* End Porfolio Page */
+
+/* start count page  */
+.count-page{
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+.count-page .count{
+    padding-left: 70px;
+}
+.count-page .count .box{
+    display: inline-block;
+    text-align: center;
+    width: calc((100% / 4) - 30px);
+}
+.count-page .count .box i{
+    color: #ff305b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.count-page .count .box h3{
+    margin: 0 0 10px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #333;
+    font-size: 26px;
+    font-weight: 800;
+}
+.count-page .count .box h5{
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+    color: #555555;
+    font-size: 16px;
+}
+/* end count page  */
+/* start testimonial page  */
+.testimonial-page {
+    position: relative;
+}
+.testimonial-page .my-client{
+    margin-inline: 23%;
+    position: relative;
+    background-color: #f1f1f1 ;
+    padding: 40px;
+    overflow: hidden;
+    width: calc(100% / 2);
+    border-radius: 5px;
+    
+}
+.testimonial-page .my-client .border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 95px solid;
+    border-color: #ff305b transparent transparent #ff305b;
+
+}
+.testimonial-page .my-client .client-img{
+    float: left;
+    position: absolute;
+    z-index: 4;
+}
+.testimonial-page .my-client .client-img img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.testimonial-page .my-client .client-info{
+    float: right;
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+
+}
+.testimonial-page .my-client .client-info h3{
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.testimonial-page .my-client .client-info h4{
+    color: #777777;
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-family: "Source Sans 3", sans-serif;
+}
+.testimonial-page .my-client .client-info h4 a{
+    color: inherit;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+}
+.testimonial-page .my-client .client-info p{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+.testimonial-page .my-client .client-info .icons{
+    font-size: 14px;
+    color: #f1c30d;
+}
+.testimonial-page .dott{
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    color: #ff305b;
+    font-size: 14px;
+}
+/* end testimonial page  */
+/* Start Blog Page */
+.blog{
+    padding: 100px 0 70px;
+    background: #f1f1f1;
+}
+.blog .content{
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 50px;
+}
+.blog .content .box{
+    float: left;
+    padding: 0 15px;
+    width: calc((100% / 3) - 30px);
+    overflow: hidden;
+}
+.blog .content .box .image{
+    width: 100%;
+    cursor: pointer;
+}
+.blog .content .box .image img{
+    width: 100%;
+}
+.blog .content .box .post-content{
+    background-color: white;
+    text-align: start;
+    padding: 20px;
+    position: relative;
+    top: -2px;
+}
+.blog .content .box .post-content p,
+.blog .content .box .post-content .post{
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgb(85,85,85,);
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 15px;
+}
+.blog .content .box .post-content h3 {
+    margin-bottom: 10px;
+}
+.blog .content .box .post-content h3 a{
+    font-size: 24px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    color: #333;
+    transition: color 0.3s linear;
+}
+.blog .content .box .post-content h3:hover a{
+    color: rgb(255, 48, 91);
+}
+.blog .content .box .post-content .post-read{
+    position: relative;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s linear;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.blog .content .box .post-content .post-read:hover{
+    color: rgb(255, 48, 91);
+}
+.blog .content .box .post-content .post-read i{
+    position: relative;
+    left: 5px;
+    font-size: 13px;
+}
+/* End Blog Page */
+/* Start Contact Page */
+.contact{
+    padding: 100px 0 70px;
+}
+.contact .content{
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 50px;
+}
+.contact .content h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    position: relative;
+    padding: 0 0  30px;
+    margin: 0 0 40px;
+}
+.contact .content h2::before{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 48, 91);
+}
+.contact .content h2::after{
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    height: 8px;
+    border-top: 1px solid rgb(255, 48, 91);
+    border-bottom: 1px solid rgb(255, 48, 91);
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .content form{
+    width: 60%;
+    margin: auto;
+}
+.contact .content form .name-email{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.contact .content form .name-email #name,
+.contact .content form .name-email #email{
+    width: calc(50% - 50px);
+    padding: 6px 12px;
+    float: left;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 20px;
+}
+.contact .content form .name-email #email{
+    float: right;
+}
+.contact .content form input {
+    border: 1px solid #ccc;
+    height: 30px;
+}
+.contact .content form input:focus,
+.contact .content form textarea:focus {
+    border-color:#ff305b;
+    outline: 0 none;
+}
+.contact .content form .sub,
+.contact .content form .msg{
+    width: 100%;
+    padding: 0 15px 0 0 ;
+}
+.contact .content form #subject{
+    width: calc(100% - 30px);
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+.contact .content form textarea{
+    border: 1px solid #ccc;
+    width: calc(100% - 30px);
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 20px;
+    
+}
+.contact .content form #submit{
+    float: left;
+    background-color: rgb(255, 48, 91);
+    border: 1px solid rgb(255, 48, 91);
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 0 20px;
+    height: 40px;
+    cursor: no-drop;
+    transition: background-color 0.4s ease-in-out ;
+}
+.contact .content form #submit:hover{
+    background-color: #EC2403;
+}
+/* End Contact Page */
+/* Start Footer Page */
+.footer {
+    padding: 50px 0;
+    background-color: #333;
+}
+.footer .content{
+    text-align: center;
+    color: white;
+}
+.footer .content .icons ul li{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.footer .content .icons ul li a{
+    color: white;
+    transition: color 0.3s linear;
+}
+.footer .content .icons ul li:hover a{
+    color: rgb(255, 48, 91);
+}
+.footer .content .copy {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.footer .content .copy a{
+    color: rgb(255, 48, 91);
+    font-weight:600 ;
+    transition: text-decoration 0.3s linear;
+}
+.footer .content .copy a:hover{
+    text-decoration: underline;
+}
+/* End Footer Page */
